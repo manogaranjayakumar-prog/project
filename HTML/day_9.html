@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELOCITY - Unleash The Ride</title>
+<link href="https://cdnjs.clare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#121212;color:#fff}
+header{background:#121212;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;border-bottom:1px solid #ff7a00}
+.logo{font-size:26px;font-weight:900;letter-spacing:1px}
+.logo span{color:#ff7a00}
+.logo i{color:#ff7a00;margin-right:5px}
+nav{display:flex;gap:20px;align-items:center}
+nav a{color:#aaa;text-decoration:none;font-size:13px;font-weight:600;letter-spacing:0.5px}
+nav a.active,nav a:hover{color:#ff7a00}
+.nav-icons{display:flex;gap:15px;color:#aaa}
+.hero{display:flex;justify-content:space-between;align-items:center;padding:50px 60px;background:linear-gradient(to right, #121212 45%, #1a1a1a);min-height:450px}
+.hero-text{max-width:480px}
+.hero-text h1{font-size:48px;color:#ff7a00;line-height:1;font-weight:900;margin-bottom:15px}
+.hero-text p{color:#bbb;font-size:15px;line-height:1.5;margin-bottom:25px}
+.btns{display:flex;gap:15px}
+.btn-primary{background:#ff7a00;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+.btn-outline{border:1px solid #ff7a00;color:#ff7a00;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px}
+.hero-img img{width:520px;max-width:100%;filter:drop-shadow(0 0 20px rgba(0,0,0,0.8))}
+.popular{background:#1c1c1c;padding:40px 60px}
+.popular h2{font-size:22px;margin-bottom:5px}
+.line{width:50px;height:3px;background:#ff7a00;margin:10px 0 25px 0}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{background:#121212;border:1px solid #333;border-radius:10px;width:300px;padding:15px;position:relative;overflow:hidden}
+.card:hover{border-color:#ff7a00}
+.card img{width:100%;height:160px;object-fit:contain}
+.badge{position:absolute;top:10px;right:10px;background:#ff7a00;color:#fff;font-size:10px;padding:4px 8px;border-radius:4px;font-weight:700}
+.card h3{font-size:16px;margin:12px 0 4px 0}
+.card p{font-size:12px;color:#888}
+.card .price{color:#ff7a00;font-weight:700;margin-top:10px;font-size:14px}
+.card-footer{margin-top:15px;font-size:11px;color:#666;display:flex;gap:8px}
+@media(max-width:900px){
+.hero{flex-direction:column;text-align:center;padding:30px 20px}
+.hero-text h1{font-size:36px}
+.popular{padding:25px 15px}
+.cards{justify-content:center}
+header{padding:15px 20px}
+nav{Display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><i class="fa-solid fa-bars-staggered"></i><span>VELOCITY</span></div>
+  <nav>
+    <a class="active" href="#">HOME</a>
+    <a href="#">SHOWROOM</a>
+    <a href="#">MODELS</a>
+    <a href="#">ACCESSORIES</a>
+    <a href="#">DEALERS</a>
+    <a href="#">CONTACT</a>
+  </nav>
+  <div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>UNLEASH THE RIDE</h1>
+    <p>Discover premium superbikes engineered for performance, precision, and style.</p>
+    <div class="btns">
+      <a href="#" class="btn-primary">Explore Models <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#" class="btn-outline">Book Test Ride</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://i.ibb.co/5g1R9yJw/superbike-png.png" alt="Superbike"
+    onerror="this.src='https://images.unsplash.com/photo-1568772585407-9361f9bf3a87'">
+  </div>
+</section>
+
+<section class="popular">
+  <h2>POPULAR MODELS</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="card">
+      <div class="badge">NEW</div>
+      <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87">
+      <h3>VELOCITY X1000</h3>
+      <p>1000cc • 198 HP • 0-60 in 2.9s</p>
+      <div class="price">$18,999</div>
+      <div class="card-footer"><span>Compare</span> • <span>Specs</span> • <span>Configure</span></div>
+    </div>
+    <div class="card">
+      <div class="badge">BESTSELLER</div>
+      <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+      <h3>VELOCITY R650</h3>
+      <p>650cc • 95 HP • Lightweight Design</p>
+      <div class="price">$11,499</div>
+    </div>
+    <div class="card">
+      <div class="badge">JUST LAUNCHED</div>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+      <h3>VELOCITY ADV 900</h3>
+      <p>900cc • 110 HP • Touring Ready</p>
+      <div class="price">$14,799</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
